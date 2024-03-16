@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Clock</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="image">
+      <img src="images/wall-clock-background_1035-415.avif" class="img" />
+      <p class="world-clock"><span class="design">World</span> Clock</p>
+    </div>
+    <div class="container">
+      <form id="search-form">
+        <input
+          type="text"
+          placeholder="Search a City..."
+          id="search-form-input"
+          required
+        />
+        <input type="submit" value="Search" id="search-city" />
+      </form>
+      <h1 class="header" id="city"></h1>
+      <p><span id="time"></span></p>
+      <br />
+      <footer>
+        This project was coded by
+        <a href="https://github.com/Mahdia-123" target="_blank"
+          >Mahdia Khamoosh</a
+        >
+        is
+        <a
+          href="https://github.com/Mahdia-123/vanilla-weather-app"
+          target="_blank"
+          >open-sourced on GitHub</a
+        >
+        and
+        <a href="https://vanillasweatherapp.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >
+      </footer>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
